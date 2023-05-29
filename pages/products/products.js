@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     productDiv.classList.add("product-card");
                     productDiv.innerHTML = `
                 <h2>${product.titulo}</h2>
-                <img src="${product.imagem}" alt="${
+                <img src="../../assets/${product.imagem}" alt="${
                         product.titulo
                     }" width="100">
                 <p>${product.descricao}</p>
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
             productDiv.classList.add("product-card");
             productDiv.innerHTML = `
             <h2>${product.titulo}</h2>
-            <img src="${product.imagem}" alt="${product.titulo}" width="100">
+            <img src="../../assets/${product.imagem}" alt="${product.titulo}" width="100">
             <p>${product.descricao}</p>
             <p>Marca: ${product.marca}</p>
             <p>Tamanho: ${product.tamanho}</p>
