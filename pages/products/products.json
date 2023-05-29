@@ -2,7 +2,7 @@
     {
       "id": 1,
       "titulo": "SNKS",
-      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "imagem": "../../assets/snks300-removebg-preview.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
       "marca": "Nike",
       "tamanho": "40",
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "titulo": "SNKS",
-      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "imagem": "../../assets/snks300-removebg-preview.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
       "marca": "Adidas",
       "tamanho": "41",
@@ -20,7 +20,7 @@
     {
       "id": 3,
       "titulo": "SNKS",
-      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "imagem": "../../assets/snks300-removebg-preview.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
       "marca": "Nike",
       "tamanho": "42",
@@ -29,7 +29,7 @@
     {
       "id": 4,
       "titulo": "SNKS",
-      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "imagem": "../../assets/snks300-removebg-preview.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
       "marca": "Mizuno",
       "tamanho": "42",
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "titulo": "SNKS",
-      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "imagem": "../../assets/snks300-removebg-preview.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
       "marca": "Mizuno",
       "tamanho": "42",
