@@ -1,0 +1,23 @@
+.compraFinalizada {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 30px;
+    margin: 150px;
+    text-align: center;
+    background-color: rgb(251, 241, 225);
+    border-radius: 40px;
+}
+
+.compraFinalizada h1 {
+    margin-bottom: 15px;
+    background-color: rgb(251, 241, 225);
+    color: brown;
+}
+
+.compraFinalizada p {
+    background-color: rgb(251, 241, 225);
+}
+.compraFinalizada a {
+    background-color: rgb(251, 241, 225);
+}

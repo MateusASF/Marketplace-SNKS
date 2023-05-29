@@ -133,10 +133,25 @@
     outline: none;
   }
 
-.footer {
+footer {
+    margin-top: 60px;
     display: flex;
-    background: brown;
-    
+    justify-content: center;
+    background: rgb(88, 82, 70);
+    align-items: center;
+    padding: 15px 0;
+
 }
   
+footer img {
+  width: 90px;
+  height: max-content;
+  background: rgb(88, 82, 70);
+  margin: 0 15px;
+}
 
+footer a{
+  text-decoration: none;
+  font-size: 25px;
+  background-color: rgb(88, 82, 70);
+}

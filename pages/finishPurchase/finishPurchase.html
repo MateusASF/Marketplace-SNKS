@@ -24,15 +24,72 @@
                 <p>●</p>
                 <a href="../products/products.html">Sneakers</a>
                 <p>●</p>
-                <a href="#">About</a>
+                <a href="../about/about.html">About</a>
             </div>
             <a href="../cart/cart.html"><img src="../../../assets/snksCarrinho.png" alt=""></a>
         </div>
     </div>
 
 
-    <h1>COMPROU OS BOOT GATÃO</h1>
+    <div class="compraFinalizada">
+        <h1>Obrigado por realizar sua compra conosco</h1>
+        <p>As informações sobre sua compra foram enviadas para seu e-mail</p>
+        <a href="../../index.html">Voltar a Página Inicial</a>
+    </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const purchaseData = localStorage.getItem('COMPRAS');
+        if (purchaseData) {
+          const purchase = JSON.parse(purchaseData);
+          sendEmail(purchase);
+        }
+      });
+  
+    //   function sendEmail(purchase) {
+    //     Email.send({
+    //       Host : "smtp.elasticemail.com",
+    //       Username : "mateus.asfonseca@gmail.com",
+    //       Password : "86C28BEFF011198CD96BBC0E603D06A46C27",
+    //       To: `${purchase.contato.email}`,
+    //       From: 'mateus.asfonseca@gmail.com',
+    //       Subject: 'Agradecemos pela sua compra!',
+    //       Body: `
+    //         <h2>Agradecemos pela sua compra!</h2>
+    //         <h3>Informações de contato:</h3>
+    //         <p>Endereço: </p>
+    //         <p>Bairro: ${purchase.endereco.bairro}</p>
+    //         <p>CEP: ${purchase.endereco.cep}</p>
+    //         <p>Cidade: ${purchase.endereco.cidade}</p>
+    //         <p>Complemento: ${purchase.endereco.complemento}</p>
+    //         <p>Logradouro: ${purchase.endereco.logradouro}</p>
+    //         <p>Numero: ${purchase.endereco.numero}</p>
+    //         <p>Pais: ${purchase.endereco.pais}</p>
+    //         </br>
+    //         <p>Telefone: ${purchase.contato.telefone}</p>
+    //         <p>email: ${purchase.contato.email}</p>
+    //         <p>Nome: ${purchase.contato.nome}</p>
+    //         <p>CPF: ${purchase.contato.cpf}</p>
+      
+    //         <h3>Produtos comprados:</h3>
+    //         <ul>
+    //           ${purchase.produtos.map(product => `<li>${product.produtos.descricao} - ${product.produtos.preco}</li>`).join('')}
+    //         </ul>
+      
+    //         <h3>Valor total: ${purchase.produtos[0].valorFinal}</h3>
+    //       `
+    //     }).then(
+    //       message => console.log('E-mail enviado com sucesso!', message)
+    //     ).catch(
+    //       error => console.error('Erro ao enviar o e-mail.', error)
+    //     );
+    //   }
+    </script>
 
-
+    <footer>
+        <a href="../products/products.html">SHOP</a>
+        <img src="../../assets/logoTransparent.png" alt="Logo da Marca">
+        <a href="../about/about.html">ABOUT</a>
+    </footer>
 </body>

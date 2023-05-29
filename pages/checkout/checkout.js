@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function validEmail() {
         const emailInput = document.getElementById("email").value;
-        isValid = /^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/.test(emailInput) == true? true : false;
+        isValid = true;
         if (isValid == true || emailInput == "") {
             const inputs = form.querySelectorAll('input[id="email"]');
             inputs.forEach(function (input) {
@@ -168,11 +168,69 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function armazenarInformacoesCompra() {
+        const carrinho = JSON.parse(localStorage.getItem("CART"));
+        const compras = JSON.parse(localStorage.getItem("COMPRAS")) || {};
+      
+        if (carrinho && carrinho.length > 0) {
+          const produtos = carrinho.map((item) => {
+            return {
+              titulo: item.titulo,
+              descricao: item.descricao,
+              tamanho: item.tamanho,
+              valor: item.preco.toFixed(2),
+            };
+          });
+      
+          const valorFinal = parseFloat(
+            document.getElementById("total-price").textContent
+          );
+      
+          const novaCompra = {
+            produtos: produtos,
+            valorFinal: valorFinal.toFixed(2),
+          };
+      
+          if (compras.hasOwnProperty("produtos")) {
+            compras.produtos.push(novaCompra);
+          } else {
+            compras.produtos = [novaCompra];
+          }
+      
+          localStorage.setItem("COMPRAS", JSON.stringify(compras));
+        }
+      }      
+
     btForm.addEventListener("click", function (event) {
         event.preventDefault();
 
         if (validateForm() == true) {
-          window.location.href = "../finishPurchase/finishPurchase.html";
+            // Armazenar as informações no Local Storage
+            const compras = {
+                endereco: {
+                    cep: document.getElementById("cep").value,
+                    logradouro: document.getElementById("logradouro").value,
+                    numero: document.getElementById("numero").value,
+                    complemento: document.getElementById("complemento").value,
+                    bairro: document.getElementById("bairro").value,
+                    cidade: document.getElementById("cidade").value,
+                    estado: document.getElementById("estado").value,
+                    pais: document.getElementById("pais").value
+                },
+                contato: {
+                    email: document.getElementById("email").value,
+                    nome: document.getElementById("nome").value,
+                    cpf: document.getElementById("cpf").value,
+                    telefone: document.getElementById("telefone").value
+                },
+                formaPagamento: document.getElementById("forma-pagamento").value
+            };
+
+            localStorage.setItem("COMPRAS", JSON.stringify(compras));
+
+            armazenarInformacoesCompra();
+
+            window.location.href = "../finishPurchase/finishPurchase.html";
         }
     });
 
