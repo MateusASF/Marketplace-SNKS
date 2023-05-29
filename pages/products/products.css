@@ -1,0 +1,105 @@
+/* products.css */
+
+.content-container {
+    display: flex;
+}
+
+.search-container {
+    padding: 10px 0;
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: rgb(234, 218, 192);
+    justify-content: center;
+    width: 15%;
+    min-width: 250px;
+    max-height: 450px;
+}
+
+.search-container label {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    background-color:rgb(215, 195, 162)
+}
+
+.search-container input,  .search-container select{
+    margin: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    background-color:rgb(215, 195, 162);
+    text-transform: uppercase;
+}
+
+.search-container button{
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    background-color:rgb(176, 163, 141);
+    margin: 0 20px 5px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.search-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: rgb(234, 218, 192);
+    text-align: center;
+}
+
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-card {
+    flex-basis: 280px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(251, 241, 225);
+    height: fit-content;
+}
+
+/* Adicione o seguinte código para centralizar o conteúdo dos cards */
+.product-card h2,
+.product-card p,
+.product-card button {
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 10px 0;
+    background-color: rgb(251, 241, 225);
+}
+
+.product-card img {
+    background-color: rgb(251, 241, 225);
+    width: 70%;
+}
+
+.product-card button {
+    border-radius: 20px;
+    background-color: rgb(220, 209, 191);
+    color: rgb(140, 40, 9);
+    border: none;
+    padding: 10px 20px;
+}

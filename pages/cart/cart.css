@@ -1,0 +1,113 @@
+/* Estilos para o banner */
+.banner {
+  background-color: rgb(255, 250, 240);
+  padding: 20px;
+  }
+  
+  .banner h1 {
+    margin: 0 60px;
+    background-color: rgb(255, 250, 240);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para os itens do carrinho */
+  .cart-items {
+    margin: 60px 120px;
+    background-color: rgb(255, 250, 240);
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 250, 240);
+  }
+  
+  .cart-item img {
+    width: 20%;
+    padding: 10px 50px;
+    margin-right: 10px;
+    background-color: rgb(251, 241, 225);
+    border-radius: 20px;
+  }
+  
+  .cart-item-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    background-color: rgb(255, 250, 240);
+  }
+  
+  .cart-item-info h3 {
+    margin: 0;
+  }
+  
+  .cart-item-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .remove-button {
+    margin: 0 20px;
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
+  
+  /* Estilos para o resumo da compra */
+  .cart-summary {
+    border-top: 3px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+    margin: 0 130px;
+  }
+  
+  .cart-summary h2 {
+    margin: 20px 0 ;
+  }
+  
+  .cart-summary p {
+    margin-bottom: 20px;
+  }
+  
+  #checkout-button {
+    background-color: rgb(220, 209, 191);
+    color: rgb(0, 164, 95);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  #back-to-products-button{
+    margin-bottom: 20px;
+    background-color: rgb(220, 209, 191);
+    color: rgb(150, 111, 13);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }

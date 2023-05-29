@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.containerMenu{
+  padding: 1rem 2rem;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerMenu img{
+  width: 15vh;
+  height: max-content;
+}
+
+.selectMenu img {
+  width: 15vh;
+  height: max-content;
+}
+
+.selectMenu {
+  display: flex;
+  align-items: center;
+}
+
+.selectMenu p {
+  font-size: 1.5rem;
+}
+
+.selectMenu a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ===================== */
+
+.containerHome {
+    width:100%;
+  }
+  
+  
+  .landingPage {
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: center;
+  }
+  
+  .landingPage h1 {
+    padding: 4rem 2rem 0 0;
+    font-size: 4.5rem;
+    width: 30vw;
+    text-shadow: 1px 1px 2px black;
+    background-color: transparent;
+  }
+  
+  .landingPage img {
+    width: 52vw;
+    margin: 12px 0;
+  }
+  
+  /* =============== */
+  .container {
+    background-color: rgb(176, 163, 141);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left-section {
+    width: 40vw;
+    text-align: center;
+    background-color: rgb(176, 163, 141);}
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(176, 163, 141);  width: 60vw;
+  }
+  
+  .right-section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 163, 141);
+  }
+  
+  .text-home h2 {
+    font-size: 3rem;
+    background-color: rgb(176, 163, 141);
+  }
+  
+  
+  .image-links {
+    transform: scale(0.7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    background-color: rgb(176, 163, 141);
+  }
+  
+  .button-container {
+    background-color: rgb(176, 163, 141);
+  }
+  
+  .button-container a{
+    text-align: center;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+    background-color: rgb(217, 217, 217);
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .icon-image{
+    background-color: rgb(176, 163, 141);
+    outline: none;
+  }
+
+.footer {
+    display: flex;
+    background: brown;
+    
+}
+  
+

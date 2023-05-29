@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "titulo": "SNKS",
+      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
+      "marca": "Nike",
+      "tamanho": "40",
+      "preco": 10.99
+    },
+    {
+      "id": 2,
+      "titulo": "SNKS",
+      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
+      "marca": "Adidas",
+      "tamanho": "41",
+      "preco": 15.99
+    },
+    {
+      "id": 3,
+      "titulo": "SNKS",
+      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
+      "marca": "Nike",
+      "tamanho": "42",
+      "preco": 20.99
+    },
+    {
+      "id": 4,
+      "titulo": "SNKS",
+      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
+      "marca": "Mizuno",
+      "tamanho": "42",
+      "preco": 20.99
+    },
+    {
+      "id": 5,
+      "titulo": "SNKS",
+      "imagem": "../../../assets/snks300-removebg-preview.png",
+      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
+      "marca": "Mizuno",
+      "tamanho": "42",
+      "preco": 20.99
+    }
+  ]
+  

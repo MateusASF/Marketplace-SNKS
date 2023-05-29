@@ -1,0 +1,227 @@
+.checkout-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hidden {
+  display: none;
+}
+
+.containerEndereco, .containerContato {
+  margin-top: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.mar-top-2{
+  margin-top: 20px;
+}
+
+#cartao-credito-info {
+  padding: 10px;
+  flex-direction: row;
+}
+
+
+.elementCreditCard{
+  display: flex;
+  flex-direction: column;
+}
+
+#pix-key{
+  display: flex;
+  max-width: 30vw;
+}
+
+
+.containerPagamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.purchase-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+}
+
+.checkout-form {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.purchase-info form h2 {
+  margin-bottom: 10px;
+}
+
+
+.purchase-info form #payment-info-container .payment-info {
+  display: none;
+}
+
+
+.purchase-info form #payment-info-container .payment-info:first-child {
+  display: block;
+}
+
+.summary-info #checkout-button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: rgb(201, 195, 184);
+  color: #43aa10;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.summary-info #checkout-button:hover {
+  transition: 0.5s all;
+  background-color: rgb(68, 125, 35);
+  color: #baaa83;
+}
+
+.summary-info .product-summary .productResume{
+  margin: 13px 0;
+}
+
+.summary-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.summary-info h2 {
+  margin-bottom: 25px;
+}
+
+.summary-info .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.summary-info .discount input {
+  margin-right: 10px;
+}
+
+.summary-info .subtotal p,
+.summary-info .total p {
+  margin-bottom: 20px;
+}
+
+.summary-info .subtotal p span,
+.summary-info .total p span {
+  font-weight: bold;
+}
+
+/* Novas regras de estilo */
+
+
+.purchase-info form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.purchase-info form .form-group {
+  margin-bottom: 20px;
+}
+
+.purchase-info form .form-group label {
+  font-size: 18px;
+}
+
+.purchase-info form .form-group input,
+.purchase-info form .form-group select {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.purchase-info form .form-group.payment-info p {
+  font-size: 18px;
+}
+
+.summary-info {
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.summary-info .product-summary {
+  margin-bottom: 40px;
+}
+
+.summary-info .product-summary h3 {
+  font-size: 18px;
+}
+
+.summary-info .discount input {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.summary-info .total p span {
+  font-size: 20px;
+}
+
+.form-group input, .form-group #forma-pagamento, #cupom {
+  background-color: rgb(251, 241, 225);
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: none;
+}
+
+.form-group label {
+  color: rgb(88, 82, 70);
+}
+
+#apply-coupon{
+  padding: 5px 10px;
+  border: none;
+  margin-top: 8px;
+  border-radius: 8px;;
+  background-color: rgb(220, 209, 191);
+}
+
+.containerFormGP h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.invalid-feedback {
+  color: rgb(255, 250, 240);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.is-invalid {
+  background-color: blue;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

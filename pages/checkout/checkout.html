@@ -1,0 +1,159 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="products.js"></script>
+  <script src="../cart/cart.js"></script>
+  <link rel="stylesheet" href="../../style.css" type="text/css">
+  <link rel="stylesheet" href="../../home.css" type="text/css">
+  <link rel="stylesheet" href="./checkout.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="checkout.js"></script>
+  <title>SNKS</title>
+</head>
+
+<div class="navbar">
+  <div class="containerMenu">
+    <div class="selectMenu">
+      <img src="../../../assets/logoBlack.png" alt="Logo da Marca">
+      <a href="../../index.html">Home</a>
+      <p>●</p>
+      <a href="../products/products.html">Sneakers</a>
+      <p>●</p>
+      <a href="#">About</a>
+    </div>
+    <a href="../cart/cart.html"><img src="../../../assets/snksCarrinho.png" alt=""></a>
+  </div>
+</div>
+
+<body>
+  <div class="checkout-container">
+    <div class="purchase-info">
+      <form id="checkout-form">
+        <div class="containerFormGP">
+          <h2>Informações de Endereço</h2>
+          <div class="containerEndereco">
+            <div class="form-group">
+              <label for="cep">CEP:</label>
+              <input type="number" id="cep" placeholder="Digite o CEP">
+              <button type="button" id="cep-search-button" class="hidden">Buscar</button>
+            </div>
+            <div class="form-group">
+              <label for="logradouro">Logradouro:</label>
+              <input type="text" id="logradouro" placeholder="Rua, Avenida, etc." readonly>
+            </div>
+            <div class="form-group">
+              <label for="numero">Número:</label>
+              <input type="number" id="numero" placeholder="Número da casa">
+            </div>
+            <div class="form-group">
+              <label for="complemento">Complemento:</label>
+              <input type="text" id="complemento" placeholder="Complemento">
+            </div>
+            <div class="form-group">
+              <label for="bairro">Bairro:</label>
+              <input type="text" id="bairro" placeholder="Bairro" readonly>
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" placeholder="Cidade" readonly>
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado:</label>
+              <input type="text" id="estado" placeholder="Estado" readonly>
+            </div>
+            <div class="form-group">
+              <label for="pais">País:</label>
+              <input type="text" id="pais" placeholder="País" readonly>
+            </div>
+          </div>
+          <h2 class="mar-top-2">Informações de Contato</h2>
+          <div class="containerContato">
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" placeholder="E-mail">
+              <span class="invalid-feedback">E-mail inválido</span>
+            </div>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" placeholder="CPF">
+              <span class="invalid-feedback">CPF inválido</span>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="number" id="telefone" placeholder="Telefone">
+            </div>
+          </div>
+          <h2 class="mar-top-2">Forma de Pagamento</h2>
+          <div class="containerPagamento">
+            <div class="form-group">
+              <label for="forma-pagamento">Forma de Pagamento:</label>
+              <select id="forma-pagamento">
+                <option value="pix">PIX</option>
+                <option value="cartao-credito">Cartão de Crédito</option>
+                <option value="boleto">Boleto</option>
+              </select>
+            </div>
+            <div id="payment-info-container">
+              <div id="pix-info" class="form-group payment-info">
+                <p>Após finalizar o pedido, você receberá as informações para pagamento com PIX em seu e-mail.</p>
+              </div>
+              <div id="cartao-credito-info" class="form-group payment-info">
+                <div class="elementCreditCard">
+                  <label for="numero-cartao">Número do Cartão:</label>
+                  <input type="text" id="numero-cartao" placeholder="Número do Cartão">
+                </div>
+                <div class="elementCreditCard">
+                  <label for="nome-titular">Nome do Titular:</label>
+                  <input type="text" id="nome-titular" placeholder="Nome do Titular">
+                </div>
+                <div class="elementCreditCard">
+                  <label for="validade-cartao">Validade:</label>
+                  <input type="text" id="validade-cartao" placeholder="MM/AA">
+                </div>
+                <div class="elementCreditCard">
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv" placeholder="CVV">
+                </div>
+              </div>
+              <div id="boleto-info" class="form-group payment-info">
+                <p>Após finalizar o pedido, você receberá as informações para pagamento do boleto em seu e-mail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="summary-info">
+      <h2>Resumo da Compra</h2>
+      <div class="product-summary">
+        <h3>Produtos</h3>
+        <!-- Aqui serão adicionadas as informações resumidas dos produtos -->
+      </div>
+      <div class="discount">
+        <label for="cupom">Cupom de Desconto:</label>
+        <input type="text" id="cupom" placeholder="Código do Cupom">
+        <button type="button" id="apply-coupon">Aplicar</button>
+      </div>
+      <div class="subtotal">
+        <p>Subtotal: R$ <span id="subtotal-price">0.00</span></p>
+        <p>Frete: R$ <span id="frete-price">0.00</span></p>
+      </div>
+      <div class="total">
+        <p>Total: R$ <span id="total-price">0.00</span></p>
+      </div>
+      <button type="submit" id="checkout-button">Finalizar Pedido</button>
+    </div>
+  </div>
+</body>
+
+</html>
