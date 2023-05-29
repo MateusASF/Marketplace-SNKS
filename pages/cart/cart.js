@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cartItemInfo.appendChild(size);
             cartItemInfo.appendChild(price);
             cartItemDiv.appendChild(cartItemInfo);
-            cartItemDiv.appendChild(removeButton);
+            cartItemInfo.appendChild(removeButton);
 
             cartItemsContainer.appendChild(cartItemDiv);
         });

@@ -50,18 +50,27 @@
   }
   
   .cart-item-info h3 {
+    color: rgb(88, 82, 70);
+    font-size: 30px;
     margin: 0;
+    font-weight: 400;
   }
   
   .cart-item-info p {
+    color: rgb(88, 82, 70);
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .remove-button {
-    margin: 0 20px;
-    border-radius: 5px;
-    padding: 5px 20px;
+    font-size: 18px;
+    margin: 20px 20px 0 20px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(140, 40, 9);
+    font-weight: 500;
+    padding: 2px 30px;
+    background-color: rgb(220, 209, 191);
   }
   
   /* Estilos para o resumo da compra */
