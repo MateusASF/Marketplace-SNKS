@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 var filteredProducts = data.filter(function (product) {
                     var isMatch = true;
 
+                    if(params.busca) {
+                        if(!product.descricao.toLowerCase().includes(params.busca.toLowerCase())){
+                            isMatch = false;
+                        }
+                    }
+
                     if (params.precoMin) {
                         if (product.preco < params.precoMin) {
                             isMatch = false;
