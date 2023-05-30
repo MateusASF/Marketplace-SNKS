@@ -57,11 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     return isMatch;
                 });
 
+                
                 // Exibir os resultados da busca
                 var searchResultsDiv =
-                    document.getElementById("search-results");
+                document.getElementById("search-results");
                 searchResultsDiv.innerHTML = "";
 
+                if(filteredProducts.length == 0) {
+                    var semProdutos = document.createElement("div");
+                    semProdutos.classList.add("no-products");
+                    semProdutos.innerHTML = `<p> Não foi encontrado nenhum produto, refaça sua busca </p>`;
+                    searchResultsDiv.appendChild(semProdutos); 
+                }
+                
                 filteredProducts.forEach(function (product) {
                     var productDiv = document.createElement("div");
                     productDiv.classList.add("product-card");

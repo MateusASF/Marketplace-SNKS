@@ -2,47 +2,47 @@
     {
       "id": 1,
       "titulo": "SNKS",
-      "imagem": "snks300-removebg-preview.png",
-      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
-      "marca": "Nike",
+      "imagem": "ericEmmanuel.png",
+      "descricao": "Rivalry Eric Emmanuel 'Flower'",
+      "marca": "Adidas",
       "tamanho": "40",
-      "preco": 10.99
+      "preco": 152.00
     },
     {
       "id": 2,
       "titulo": "SNKS",
-      "imagem": "snks300-removebg-preview.png",
-      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
-      "marca": "Adidas",
+      "imagem": "airForceClotch.png",
+      "descricao": "Air Force 1 CLOT Rose Gold Silk",
+      "marca": "Nike",
       "tamanho": "41",
-      "preco": 15.99
+      "preco": 200.00
     },
     {
       "id": 3,
       "titulo": "SNKS",
-      "imagem": "snks300-removebg-preview.png",
-      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
-      "marca": "Nike",
-      "tamanho": "42",
-      "preco": 20.99
+      "imagem": "deadpool.png",
+      "descricao": "wave rider bait feat. deadpool",
+      "marca": "Mizuno",
+      "tamanho": "39",
+      "preco": 69.00
     },
     {
       "id": 4,
       "titulo": "SNKS",
       "imagem": "snks300-removebg-preview.png",
-      "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
-      "marca": "Mizuno",
+      "descricao": "Gucci x Balenciaga The Hacker Project Triple S Flora Print",
+      "marca": "Balenciaga",
       "tamanho": "42",
-      "preco": 20.99
+      "preco": 354.00
     },
     {
       "id": 5,
       "titulo": "SNKS",
-      "imagem": "snks300-removebg-preview.png",
+      "imagem": "dunkSwarovski.png",
       "descricao": "CACTUS PLANT FLEA MARKET X SWAROVSKI X DUNK LOW",
-      "marca": "Mizuno",
-      "tamanho": "42",
-      "preco": 20.99
+      "marca": "Nike",
+      "tamanho": "43",
+      "preco": 189.00
     }
   ]
   

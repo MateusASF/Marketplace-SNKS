@@ -42,6 +42,7 @@
   align-items: center;
   gap: 10px;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .purchase-info {
@@ -220,8 +221,3 @@
   background-color: blue;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}

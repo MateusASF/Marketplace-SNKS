@@ -2,50 +2,57 @@ document.addEventListener("DOMContentLoaded", function () {
     // Função para obter os itens do carrinho do armazenamento local
 
     // Função para renderizar os itens do carrinho na página
-    function renderCartItems() {
-        var cartItems = getCartItems();
-        var cartItemsContainer = document.querySelector(".cart-items");
-        cartItemsContainer.innerHTML = "";
+// Função para renderizar os itens do carrinho na página
+function renderCartItems() {
+    var cartItems = getCartItems();
+    var cartItemsContainer = document.querySelector(".cart-items");
+    cartItemsContainer.innerHTML = "";
 
-        cartItems.forEach(function (item) {
-            var cartItemDiv = document.createElement("div");
-            cartItemDiv.classList.add("cart-item");
+    cartItems.forEach(function (item, index) {
+        var cartItemDiv = document.createElement("div");
+        cartItemDiv.classList.add("cart-item");
 
-            var image = document.createElement("img");
-            image.src = item.imagem.replace("../","");
-            image.alt = item.titulo;
+        var image = document.createElement("img");
+        image.src = "../../assets/" + item.imagem.replaceAll("../", "");
+        image.alt = item.titulo;
 
-            var cartItemInfo = document.createElement("div");
-            cartItemInfo.classList.add("cart-item-info");
+        var cartItemInfo = document.createElement("div");
+        cartItemInfo.classList.add("cart-item-info");
 
-            var title = document.createElement("h3");
-            title.textContent = item.descricao;
+        var title = document.createElement("h3");
+        title.textContent = item.descricao;
 
-            var size = document.createElement("p");
-            size.textContent = "Tamanho: " + item.tamanho;
+        var size = document.createElement("p");
+        size.textContent = "Tamanho: " + item.tamanho;
 
-            var price = document.createElement("p");
-            price.textContent = "Preço: R$ " + item.preco.toFixed(2);
+        var price = document.createElement("p");
+        price.textContent = "Preço: R$ " + item.preco.toFixed(2);
 
-            var removeButton = document.createElement("button");
-            removeButton.classList.add("remove-button");
-            removeButton.textContent = "Remover";
-
-            cartItemDiv.appendChild(image);
-            cartItemInfo.appendChild(title);
-            cartItemInfo.appendChild(size);
-            cartItemInfo.appendChild(price);
-            cartItemDiv.appendChild(cartItemInfo);
-            cartItemInfo.appendChild(removeButton);
-
-            cartItemsContainer.appendChild(cartItemDiv);
+        var removeButton = document.createElement("button");
+        removeButton.classList.add("remove-button");
+        removeButton.textContent = "Remover";
+        removeButton.addEventListener("click", function () {
+            removeItemFromCart(index);
         });
-    }
+
+        cartItemDiv.appendChild(image);
+        cartItemInfo.appendChild(title);
+        cartItemInfo.appendChild(size);
+        cartItemInfo.appendChild(price);
+        cartItemDiv.appendChild(cartItemInfo);
+        cartItemInfo.appendChild(removeButton);
+
+        cartItemsContainer.appendChild(cartItemDiv);
+    });
+}
+
 
     // Função para remover um item do carrinho
-    function removeItemFromCart(index) {
+    function removeItemFromCart(itemId) {
         var cartItems = getCartItems();
-        cartItems.splice(index, 1);
+        cartItems = cartItems.filter(function (item, index) {
+            return index !== itemId; // Remove o item com base no seu ID
+        });
         saveCartItems(cartItems);
         renderCartItems();
         updateCartSummary();
@@ -76,10 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var cartItemsContainer = document.querySelector(".cart-items");
         cartItemsContainer.addEventListener("click", function (event) {
             if (event.target.classList.contains("remove-button")) {
-                var index = Array.from(cartItemsContainer.children).indexOf(
-                    event.target.parentNode
-                );
-                removeItemFromCart(index);
+                var itemId = event.target.dataset.itemId; // Obtém o ID único do item
+                removeItemFromCart(itemId);
             }
         });
 
@@ -92,9 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Lidar com o clique do botão "Voltar para os Produtos"
-        var goToCheckoutButton = document.getElementById(
-            "checkout-button"
-        );
+        var goToCheckoutButton = document.getElementById("checkout-button");
         goToCheckoutButton.addEventListener("click", function () {
             window.location.href = "../checkout/checkout.html"; // Substitua pelo caminho correto para o arquivo products.html
         });

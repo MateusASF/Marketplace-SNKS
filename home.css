@@ -80,14 +80,17 @@
   .left-section {
     width: 40vw;
     text-align: center;
-    background-color: rgb(176, 163, 141);}
+    padding: 10px;
+    background-color: rgb(255, 250, 240);
+    border-radius: 30px;
+  }
   
   .image {
     max-width: 100%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
-    background-color: rgb(176, 163, 141);  width: 60vw;
+    background-color: rgb(255, 250, 240);  width: 60vw;
   }
   
   .right-section {
@@ -98,6 +101,15 @@
     align-items: center;
     background-color: rgb(176, 163, 141);
   }
+
+  .right-section .text-home h2 {
+    padding-bottom: 20px;
+    background-color: rgb(176, 163, 141);
+  }
+
+  .button-container {
+    margin-top: 50px;
+  }
   
   .text-home h2 {
     font-size: 3rem;
@@ -106,7 +118,8 @@
   
   
   .image-links {
-    transform: scale(0.7);
+    text-decoration: none;
+    transform: scale(1);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -115,17 +128,23 @@
   }
   
   .button-container {
-    background-color: rgb(176, 163, 141);
+    background-color: rgb(176, 141, 170);
   }
   
   .button-container a{
     text-align: center;
     padding: 0.5rem 3rem;
     border-radius: 1rem;
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(255, 250, 240);
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
+  }
+
+  .button-container a:hover{
+    transition: 0.5s all;
+    background-color: rgb(122, 82, 2);
+    color: rgb(216, 212, 203);
   }
   
   .icon-image{
@@ -134,13 +153,11 @@
   }
 
 footer {
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     background: rgb(88, 82, 70);
     align-items: center;
     padding: 15px 0;
-
 }
   
 footer img {
