@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var btDisable;
+
     // Função para obter os itens do carrinho do armazenamento local
 
     // Função para renderizar os itens do carrinho na página
 // Função para renderizar os itens do carrinho na página
 function renderCartItems() {
     var cartItems = getCartItems();
+    cartItems.length == 0 ? btDisable = true : btDisable = false;
     var cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
 
@@ -56,6 +59,9 @@ function renderCartItems() {
         saveCartItems(cartItems);
         renderCartItems();
         updateCartSummary();
+        if (cartItems.length == 0) {
+            window.location.href = "../cart/cart.html";
+        }
     }
 
     // Função para atualizar o resumo da compra
@@ -92,12 +98,23 @@ function renderCartItems() {
         var backToProductsButton = document.getElementById(
             "back-to-products-button"
         );
+
         backToProductsButton.addEventListener("click", function () {
             window.location.href = "../products/products.html"; // Substitua pelo caminho correto para o arquivo products.html
         });
 
         // Lidar com o clique do botão "Voltar para os Produtos"
         var goToCheckoutButton = document.getElementById("checkout-button");
+        var zeroItemsSpan = document.getElementById("zeroItems");
+
+        if(btDisable == true) {
+            goToCheckoutButton.style.display = 'none';
+            zeroItemsSpan.style.display = 'block';
+        } else {
+            goToCheckoutButton.style.display = 'flex';
+            zeroItemsSpan.style.display = 'none';
+        }
+
         goToCheckoutButton.addEventListener("click", function () {
             window.location.href = "../checkout/checkout.html"; // Substitua pelo caminho correto para o arquivo products.html
         });

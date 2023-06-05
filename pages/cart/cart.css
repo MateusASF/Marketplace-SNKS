@@ -123,6 +123,13 @@
   cursor: pointer;
 }
 
+#checkout-button:disabled{
+  background-color: rgb(241, 2, 2);
+  color: rgb(215, 215, 215);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
   #back-to-products-button{
     margin-bottom: 20px;
     background-color: rgb(220, 209, 191);
@@ -143,4 +150,10 @@
     background-color:rgb(233, 183, 96);
     color: rgb(104, 13, 13);
     cursor: pointer;
+  }
+
+  #zeroItems {
+    display: none;
+    margin: 2rem 0;
+    font-size: 35px;
   }
