@@ -1,11 +1,11 @@
 .navbar {
-    display: flex;
-    top: 0;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  top: 0;
+  width: 100%;
+  align-items: center;
 }
 
-.containerMenu{
+.containerMenu {
   padding: 1rem 2rem;
   display: flex;
   width: 100vw;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.containerMenu img{
+.containerMenu img {
   width: 15vh;
   height: max-content;
 }
@@ -55,121 +55,142 @@
 /* ===================== */
 
 .containerHome {
-    width:100%;
-  }
-  
-  
-  .landingPage {
-    display: flex;
-    padding: 2rem 4rem;
-    justify-content: center;
-  }
-  
-  .landingPage h1 {
-    padding: 4rem 2rem 0 0;
-    font-size: 4.5rem;
-    width: 30vw;
-    text-shadow: 1px 1px 2px black;
-    background-color: transparent;
-  }
-  
-  .landingPage img {
-    width: 52vw;
-    margin: 12px 0;
-  }
-  
-  /* =============== */
-  .container {
-    background-color: rgb(176, 163, 141);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .left-section {
-    width: 40vw;
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(255, 250, 240);
-    border-radius: 30px;
-  }
-  
-  .image {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: rgb(255, 250, 240);  width: 60vw;
-  }
-  
-  .right-section {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(176, 163, 141);
-  }
+  width: 100%;
+}
 
-  .right-section .text-home h2 {
-    padding-bottom: 20px;
-    background-color: rgb(176, 163, 141);
-  }
 
-  .button-container {
-    margin-top: 50px;
-  }
-  
-  .text-home h2 {
-    font-size: 3rem;
-    background-color: rgb(176, 163, 141);
-  }
-  
-  
-  .image-links {
-    text-decoration: none;
-    transform: scale(1);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    background-color: rgb(176, 163, 141);
-  }
-  
-  .button-container {
-    background-color: rgb(176, 141, 170);
-  }
-  
-  .button-container a{
-    text-align: center;
-    padding: 0.5rem 3rem;
-    border-radius: 1rem;
-    background-color: rgb(255, 250, 240);
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
+.landingPage {
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: center;
+}
 
-  .button-container a:hover{
-    transition: 0.5s all;
-    background-color: rgb(122, 82, 2);
-    color: rgb(216, 212, 203);
-  }
-  
-  .icon-image{
-    background-color: rgb(176, 163, 141);
-    outline: none;
-  }
+.landingPage h1 {
+  padding: 4rem 2rem 0 0;
+  font-size: 4.5rem;
+  width: 30vw;
+  text-shadow: 1px 1px 2px black;
+  background-color: transparent;
+}
+
+.landingPage img {
+  width: 52vw;
+  margin: 12px 0;
+}
+
+/* =============== */
+.container {
+  background-color: rgb(176, 163, 141);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-section {
+  width: 40vw;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(255, 250, 240);
+  border-radius: 30px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(255, 250, 240);
+  width: 60vw;
+}
+
+.right-section {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(176, 163, 141);
+}
+
+.right-section .text-home h2 {
+  padding-bottom: 20px;
+  background-color: rgb(176, 163, 141);
+}
+
+.button-container {
+  margin-top: 50px;
+}
+
+.text-home h2 {
+  font-size: 3rem;
+  background-color: rgb(176, 163, 141);
+}
+
+
+.image-links {
+  text-decoration: none;
+  transform: scale(1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  background-color: rgb(176, 163, 141);
+}
+
+.button-container {
+  background-color: rgb(176, 141, 170);
+}
+
+.button-container a {
+  text-align: center;
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 250, 240);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-container a:hover {
+  transition: 0.5s all;
+  background-color: rgb(122, 82, 2);
+  color: rgb(216, 212, 203);
+}
+
+.icon-image {
+  background-color: rgb(176, 163, 141);
+  outline: none;
+}
+
+
+.future-app {
+  margin: 1vw 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.future-app img {
+  width: 50vw;
+}
+
+.future-app p {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3.5rem;;
+}
 
 footer {
-    display: flex;
-    justify-content: center;
-    background: rgb(88, 82, 70);
-    align-items: center;
-    padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background: rgb(88, 82, 70);
+  align-items: center;
+  padding: 15px 0;
 }
-  
+
 footer img {
   width: 90px;
   height: max-content;
@@ -177,13 +198,13 @@ footer img {
   margin: 0 15px;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   font-size: 25px;
   background-color: rgb(88, 82, 70);
 }
 
-footer a:hover{
+footer a:hover {
   transition: 0.5s all;
   color: rgb(168, 140, 88);
 }
