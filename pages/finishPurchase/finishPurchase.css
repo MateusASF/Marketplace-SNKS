@@ -18,6 +18,15 @@
 .compraFinalizada p {
     background-color: rgb(251, 241, 225);
 }
+
+
 .compraFinalizada a {
     background-color: rgb(251, 241, 225);
+    text-decoration: none;
+}
+
+.compraFinalizada a:hover {
+    font-size: 31px;
+    transition: 0.5s all;
+    color: rgb(183, 141, 0);
 }

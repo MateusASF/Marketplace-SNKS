@@ -92,10 +92,14 @@
   cursor: pointer;
 }
 
+#forma-pagamento:hover {
+  cursor: pointer;
+}
+
 .summary-info #checkout-button:hover {
   transition: 0.5s all;
-  background-color: rgb(68, 125, 35);
-  color: #baaa83;
+  background-color: rgb(71, 176, 9);
+  color: #2e2b23;
 }
 
 .summary-info .product-summary .productResume{
@@ -203,6 +207,13 @@
   margin-top: 8px;
   border-radius: 8px;;
   background-color: rgb(220, 209, 191);
+}
+
+#apply-coupon:hover{
+  background-color: rgb(51, 97, 56);
+  color: rgb(215, 215, 215);
+  transition: 0.5s all;
+  cursor: pointer;
 }
 
 .containerFormGP h2 {

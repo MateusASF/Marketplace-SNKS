@@ -23,6 +23,11 @@
   height: max-content;
 }
 
+.cart:hover {
+  width: 16vh;
+  transition: 0.5s all;
+}
+
 .selectMenu {
   display: flex;
   align-items: center;
@@ -30,6 +35,11 @@
 
 .selectMenu p {
   font-size: 1.5rem;
+}
+
+.selectMenu a:hover {
+  color: rgb(193, 98, 10);
+  transition: 0.5s all;
 }
 
 .selectMenu a {
@@ -171,4 +181,9 @@ footer a{
   text-decoration: none;
   font-size: 25px;
   background-color: rgb(88, 82, 70);
+}
+
+footer a:hover{
+  transition: 0.5s all;
+  color: rgb(168, 140, 88);
 }

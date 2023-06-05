@@ -48,6 +48,17 @@
     font-weight: 800;
 }
 
+.search-container select{
+    cursor: pointer;
+}
+
+.search-container button:hover{
+    transition: 0.5s all;
+    background-color:rgb(233, 183, 96);
+    color: rgb(104, 13, 13);
+    cursor: pointer;
+}
+
 .search-field {
     display: flex;
     justify-content: center;
@@ -78,6 +89,13 @@
     background-color: rgb(251, 241, 225);
     height: fit-content;
     min-height: 450px;
+}
+
+.product-card button:hover {
+    background-color: rgb(51, 97, 56);
+    color: rgb(215, 215, 215);
+    transition: 0.5s all;
+    cursor: pointer;
 }
 
 /* Adicione o seguinte código para centralizar o conteúdo dos cards */
