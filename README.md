@@ -14,4 +14,4 @@ O projeto tem como base o site a ideia de uma site de venda de tênis exclusivos
 
 ## Link da página estática
 - O projeto se encontra no link abaixo</br>
-> https://mateusasf.github.io/Projeto_FrontEnd_Reproducao-Site-HBO/
+> https://mateusasf.github.io/Marketplace-SNKS/
