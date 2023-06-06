@@ -16,6 +16,7 @@ function renderCartItems() {
         cartItemDiv.classList.add("cart-item");
 
         var image = document.createElement("img");
+        console.log(item.image);
         image.src = "../../assets/" + item.imagem.replaceAll("../", "");
         image.alt = item.titulo;
 
